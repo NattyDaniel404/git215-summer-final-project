@@ -1,0 +1,154 @@
+/* CSS Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* CSS Variables for Colors and Fonts */
+:root {
+    --main-bg-color: #f4f4f4;
+    --primary-color: #333;
+    --secondary-color: #007BFF;
+    --font-family-1: 'Arial', sans-serif;
+    --font-family-2: 'Georgia', serif;
+    --font-family-3: 'Cursive', cursive;
+}
+
+/* General Styles */
+body {
+    font-family: var(--font-family-1);
+    background-color: var(--main-bg-color);
+    color: var(--primary-color);
+}
+
+/* Container for layout control */
+.container {
+    max-width: 1280px; /* Fixed width */
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Header and Navigation Styles */
+header {
+    text-align: center;
+    padding: 20px 0;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 20px; /* Space between nav items */
+    margin-bottom: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: var(--primary-color);
+    font-weight: bold;
+}
+
+nav a:hover,
+nav a:focus {
+    color: var(--secondary-color); /* Change color on hover/focus */
+}
+
+/* Hero Section Styles */
+.hero {
+    height: 50vh; /* Half of the viewport height */
+    background-image: url(images/swiss-valley.jpg);
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 2.5rem; /* Adjust font size */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+}
+
+/* Section Heading Styles */
+h2 {
+    text-align: center;
+    font-size: 2rem;
+    margin: 40px 0 20px;
+}
+
+/* Image and Description Section Styles */
+.image-container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 20px;
+    margin-bottom: 40px;
+}
+
+.image-container img {
+    max-width: 100%; /* Two images sharing 100% width */
+    height: auto;
+    border-radius: 10px;
+}
+
+.image-description {
+    text-align: center;
+    margin-top: 10px;
+}
+
+/* Footer Styles */
+footer {
+    text-align: center;
+    padding: 20px 0;
+    background-color: var(--main-bg-color);
+}
+
+/* Form Styles */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    max-width: 400px; /* Limit form width */
+    margin: 0 auto; /* Center the form */
+}
+
+label {
+    font-weight: bold;
+    font-size: 1.1rem; /* Increased font size for labels */
+}
+
+input,
+textarea {
+    padding: 15px; /* Increased padding for inputs and textarea */
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem; /* Font size for inputs and textarea */
+}
+
+input:focus,
+textarea:focus {
+    border-color: var(--secondary-color); /* Highlight on focus */
+}
+
+/* Larger buttons for email and phone */
+.contact-method {
+    display: flex;
+    gap: 10px; /* Space between buttons */
+}
+
+button {
+    padding: 15px; /* Increased padding for buttons */
+    border: none;
+    border-radius: 5px;
+    background-color: var(--secondary-color);
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    font-size: 1.1rem; /* Increased font size for buttons */
+    min-width: 120px; /* Minimum width for buttons */
+}
+
+button:hover {
+    background-color: darken(var(--secondary-color), 10%); /* Darken on hover */
+}
+/* OBFUSCATED BY CSSOBFUSCATOR.COM at 2024/08/10 01:42:12 */
+body{font-family:var(--font-family-1);}body,footer{background-color:var(--main-bg-color);}*,h2{margin-left:0;}body{color:var(--primary-color);}footer,h2,header{text-align:center;}header,footer{padding-left:0;}*,.container{margin-bottom:0;}header,footer{padding-bottom:15pt;}[class~=image-container] img{max-width:100%;}[class~=image-container] img{height:auto;}footer,header{padding-right:0;}[class~=image-container] img{border-radius:10px;}header,footer{padding-top:15pt;}:root{--main-bg-color:#f4f4f4;}h2{font-size:2rem;}h2{margin-bottom:15pt;}h2,*{margin-right:0;}h2{margin-top:30pt;}:root{--primary-color:#333;}nav ul{list-style:none;}:root{--secondary-color:#007bff;}:root{--font-family-1:"Arial",sans-serif;}:root{--font-family-2:"Georgia",serif;}input:focus{border-left-color:var(--secondary-color);}:root{--font-family-3:"Cursive",cursive;}.container{max-width:1280px;}form,.container{margin-left:auto;}nav ul,form{display:flex;}form{flex-direction:column;}form{gap:.104166667in;}form{max-width:25pc;}input:focus{border-bottom-color:var(--secondary-color);}form{margin-bottom:0;}form,.container{margin-right:auto;}.container,form{margin-top:0;}label{font-weight:bold;}label{font-size:1.1rem;}input,textarea{padding-left:.9375pc;}textarea,input{padding-bottom:.9375pc;}input,textarea{padding-right:.9375pc;}textarea,input{padding-top:.9375pc;}input{border-left-width:.010416667in;}input:focus{border-right-color:var(--secondary-color);}input{border-bottom-width:.010416667in;}input{border-right-width:.010416667in;}nav a:hover,nav a:focus{color:var(--secondary-color);}.container{padding-left:1.25pc;}input{border-top-width:.010416667in;}input{border-left-style:solid;}input{border-bottom-style:solid;}input{border-right-style:solid;}input{border-top-style:solid;}.container{padding-bottom:1.25pc;}input{border-left-color:#ccc;}input{border-bottom-color:#ccc;}input{border-right-color:#ccc;}input{border-top-color:#ccc;}input{border-image:none;}input,textarea{border-radius:5px;}textarea,input{font-size:1rem;}textarea:focus,input:focus{border-top-color:var(--secondary-color);}.container{padding-right:1.25pc;}textarea{border-left-width:.010416667in;}[class~=hero],nav ul{justify-content:center;}.container{padding-top:1.25pc;}[class~=hero]{height:50vh;}[class~=hero]{background-image:url("images/swiss-valley.jpg");}textarea{border-bottom-width:.010416667in;}[class~=hero]{background-size:cover;}[class~=hero]{background-position:center;}[class~=hero]{display:flex;}textarea{border-right-width:.010416667in;}textarea{border-top-width:.010416667in;}textarea{border-left-style:solid;}textarea{border-bottom-style:solid;}textarea:focus{border-left-color:var(--secondary-color);}textarea{border-right-style:solid;}textarea{border-top-style:solid;}textarea{border-left-color:#ccc;}textarea:focus{border-bottom-color:var(--secondary-color);}[class~=hero]{align-items:center;}*{margin-top:0;}textarea{border-bottom-color:#ccc;}[class~=hero],button{color:white;}textarea{border-right-color:#ccc;}[class~=image-container],nav ul{gap:15pt;}textarea{border-top-color:#ccc;}textarea{border-image:none;}button{padding-left:11.25pt;}textarea:focus{border-right-color:var(--secondary-color);}button{padding-bottom:11.25pt;}button{padding-right:11.25pt;}button{padding-top:11.25pt;}button{border-left-width:medium;}button{border-bottom-width:medium;}button{border-right-width:medium;}button{border-top-width:medium;}button{border-left-style:none;}button{border-bottom-style:none;}button{border-right-style:none;}button{border-top-style:none;}nav ul{margin-bottom:20px;}button{border-left-color:currentColor;}button:hover{background-color:darken(var(--secondary-color),10%);}*{padding-left:0;}button{border-bottom-color:currentColor;}[class~=hero]{font-size:2.5rem;}button{border-right-color:currentColor;}button{border-top-color:currentColor;}button{border-image:none;}button{border-radius:5px;}button{background-color:var(--secondary-color);}*{padding-bottom:0;}button,nav a{font-weight:bold;}button{cursor:pointer;}button{font-size:1.1rem;}button{min-width:90pt;}[class~=hero]{text-shadow:.125pc .125pc .25pc rgba(0,0,0,.7);}[class~=contact-method],[class~=image-container]{display:flex;}nav a{text-decoration:none;}[class~=image-container]{justify-content:center;}[class~=image-container]{align-items:flex-start;}[class~=image-container]{margin-bottom:2.5pc;}nav a{color:var(--primary-color);}[class~=image-description]{text-align:center;}[class~=image-description]{margin-top:.104166667in;}*{padding-right:0;}[class~=contact-method]{gap:10px;}*{padding-top:0;}*{box-sizing:border-box;}
